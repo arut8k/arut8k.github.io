@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Past Work | Arut</title>
+  <meta name="description" content="Photos of cable tidying, home security installs and painting jobs by Arut.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Arut<span>.</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html" aria-current="page">My Past Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="page-title">
+        <p class="eyebrow">Gallery</p>
+        <h1>My Past Work</h1>
+        <p>A look at some of the jobs I've finished. Cable cleanups, security installs and paint jobs.</p>
+      </div>
+
+      <!--
+        To add a photo: put the file in the images/ folder and copy one <figure> block below.
+        Change the file name in src, the alt text, and the caption.
+      -->
+      <div class="gallery">
+        <figure>
+          <div class="photo"><img src="images/work-1.jpg" alt="Tidied cables on exterior wall" onerror="this.remove()"><span>images/work-1.jpg</span></div>
+          <figcaption>Cable tidying: before &amp; after</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/work-2.jpg" alt="Security camera installation" onerror="this.remove()"><span>images/work-2.jpg</span></div>
+          <figcaption>Security camera install</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/work-3.jpg" alt="Freshly painted room" onerror="this.remove()"><span>images/work-3.jpg</span></div>
+          <figcaption>Interior painting</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/work-4.jpg" alt="Video doorbell installed" onerror="this.remove()"><span>images/work-4.jpg</span></div>
+          <figcaption>Video doorbell setup</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/work-5.jpg" alt="Exterior paint job" onerror="this.remove()"><span>images/work-5.jpg</span></div>
+          <figcaption>Exterior paint job</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/work-6.jpg" alt="Neat cable run along house" onerror="this.remove()"><span>images/work-6.jpg</span></div>
+          <figcaption>Neat cable run along the siding</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-info">
+        <h2>Let's talk</h2>
+        <p>Like what you see? Tell me what you need done and I'll get back to you soon.</p>
+        <p class="email">✉️ <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+
+      <!-- Replace YOUR_FORM_ID with the ID from your free Formspree form (formspree.io) -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>What do you need help with?
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Arut. All rights reserved.</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

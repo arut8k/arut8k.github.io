@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arut | Cable Tidying, Home Security &amp; Painting</title>
+  <meta name="description" content="Arut helps with messy cable cleanup, home security installation and painting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Arut<span>.</span></a>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="work.html">My Past Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Home services</p>
+          <h1>Hello! I'm <em>Arut</em></h1>
+          <p class="lead">
+            Russian-born Armenian who loves to hike, sauna, play soccer and fix cables!
+            You can call me for tidying up the messy cables on the side of your house,
+            installing home security and painting.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn ghost" href="work.html">See my work</a>
+          </div>
+        </div>
+
+        <!-- Replace images/arut.jpg with your own photo (same file name) -->
+        <div class="photo">
+          <img src="images/arut.jpg" alt="Arut" onerror="this.remove()">
+          <span>Your photo goes here<br><small>images/arut.jpg</small></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+      <div class="wrap">
+        <h2>What I can do for you</h2>
+        <p class="section-sub">Small jobs that make a big difference around the house.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🔌</div>
+            <h3>Cable tidying</h3>
+            <p>Messy cables on the side of your house? I'll sort, secure and hide them so everything looks clean.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔒</div>
+            <h3>Home security</h3>
+            <p>Cameras, sensors and doorbells installed neatly and set up so they actually work.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🎨</div>
+            <h3>Painting</h3>
+            <p>Interior and exterior painting with clean lines and a tidy finish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-strip">
+      <div class="wrap">
+        <h2>A bit about me</h2>
+        <p>
+          When I'm not on a job, you'll find me on a hiking trail, in a sauna or on a soccer field.
+          I take the same care with your home that I'd want for my own: show up on time,
+          do it right, and leave things cleaner than I found them.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-info">
+        <h2>Let's talk</h2>
+        <p>Tell me what you need done and I'll get back to you soon.</p>
+        <p class="email">✉️ <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+
+      <!-- Replace YOUR_FORM_ID with the ID from your free Formspree form (formspree.io) -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>What do you need help with?
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Arut. All rights reserved.</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
